@@ -925,4 +925,36 @@ html {
     padding: 20px;
   }
 }
+@media (max-width: 768px) {
+  /* Make "Technical Skills" heading appear in one line */
+  .heading1 {
+    white-space: nowrap;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Move technical skills content to the right */
+  .Technical-bars {
+    padding-left: 30px;
+  }
+
+  /* Make sure skill name doesn't clash with percentage */
+  .bar .info span {
+    display: inline-block;
+    min-width: 100px;
+  }
+
+  /* Adjust the position of percentage box */
+  .progress-line span::after {
+    top: -30px;
+    right: -10px;
+  }
+
+  /* Adjust the arrow (pointer) below percentage */
+  .progress-line span::before {
+    top: -14px;
+  }
+}
+
 
