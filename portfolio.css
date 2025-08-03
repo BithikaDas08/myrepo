@@ -926,7 +926,7 @@ html {
   }
 }
 @media (max-width: 768px) {
-  /* Make "Technical Skills" heading appear in one line */
+  /* Keep heading in one line */
   .heading1 {
     white-space: nowrap;
     font-size: 24px;
@@ -934,24 +934,37 @@ html {
     margin-bottom: 20px;
   }
 
-  /* Move technical skills content to the right */
-  .Technical-bars {
-    padding-left: 30px;
+  /* Move technical skills to the LEFT */
+  .technical-bars {
+    padding-left: 0;
+    padding-right: 20px;
   }
 
-  /* Make sure skill name doesn't clash with percentage */
-  .bar .info span {
-    display: inline-block;
-    min-width: 100px;
+  /* Widen the progress bar line */
+  .bar .progress-line {
+    width: 100%; /* Full width */
+    height: 10px;
+    background: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
   }
 
-  /* Adjust the position of percentage box */
+  /* Adjust the filled part (actual percentage line) */
+  .bar .progress-line span {
+    display: block;
+    height: 100%;
+    background: #0ef;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  /* Position percentage box correctly */
   .progress-line span::after {
     top: -30px;
     right: -10px;
   }
 
-  /* Adjust the arrow (pointer) below percentage */
   .progress-line span::before {
     top: -14px;
   }
