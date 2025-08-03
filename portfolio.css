@@ -1000,41 +1000,46 @@ html {
   }
 }
 @media (max-width: 768px) {
-  .technical-bars,
-  .skills {
-    align-items: flex-start !important;
-    text-align: left !important;
-    padding-left: 10px;
+  /* Keep heading in one line */
+  .heading1 {
+    white-space: nowrap;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
-  .heading1,
-  .heading {
-    text-align: left !important;
-    padding-left: 10px;
-  }
-}
-@media (max-width: 768px) {
-  .portfolio-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 0 10px;
+  /* Move technical skills to the LEFT */
+  .technical-bars {
+    padding-left: 0;
+    padding-right: 20px;
   }
 
-  .portfolio-content .row {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
+  /* Widen the progress bar line */
+  .bar .progress-line {
+    width: 100%; /* Full width */
+    height: 10px;
+    background: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
   }
 
-  .portfolio-content .row img {
-    width: 100%;
-    height: auto;
+  /* Adjust the filled part (actual percentage line) */
+  .bar .progress-line span {
     display: block;
+    height: 100%;
+    background: #0ef;
+    position: relative;
+    border-radius: 10px;
   }
 
-  .layer {
-    padding: 10px;
-    font-size: 14px;
+  /* Position percentage box correctly */
+  .progress-line span::after {
+    top: -30px;
+    right: -10px;
+  }
+
+  .progress-line span::before {
+    top: -14px;
   }
 }
