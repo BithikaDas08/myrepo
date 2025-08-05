@@ -157,7 +157,7 @@ body {
 
 .about-img img {
     padding-bottom: 10%;
-    max-width: 100%;
+    max-width: 630px;
     height: auto;
     width: 60%;
     border-radius: 10px;
@@ -188,12 +188,14 @@ body {
     margin-bottom: 4rem;
 }
 
+
 @media (max-width: 768px) {
   .about {
     display: block;
     text-align: center;
   }
-}192
+}
+
 @media (max-width: 768px) {
   .about {
     flex-direction: column;
@@ -355,25 +357,25 @@ section {
     font-size: 23px;
 }
 
-.technical-bars .bar {
+.Technical-bars .bar {
     margin-top: 40px 0;
 }
-.technical-bars .bar:first-child {
+.Technical-bars .bar:first-child {
     margin-top: 0;
 }
-.technical-bars .bar:last-child {
+.Technical-bars .bar:last-child {
     margin-bottom: 0;
 }
-.technical-bars .bar .info {
+.Technical-bars .bar .info {
     margin-bottom: 5px;
 }
-.technical-bars .bar .info span {
+.Technical-bars .bar .info span {
     font-size: 17px;
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
-.technical-bars .bar .progress-line {
+.Technical-bars .bar .progress-line {
     position: relative;
     border-radius: 10px;
     width: 100%;
@@ -390,7 +392,7 @@ section {
         transform: scaleX(1);
     }
 }
-.technical-bars .bar .progress-line span{
+.Technical-bars .bar .progress-line span{
     height: 100%;
     background-color: #0ef;
     position: absolute;
@@ -555,7 +557,7 @@ html {
   text-decoration: underline; 
   text-underline-offset: 10px;
    text-decoration-thickness:5px;
- /*text-align: center;*/
+ /text-align: center;/
 }
 
 .radial-bars {
@@ -924,6 +926,12 @@ html {
   }
 }
 @media (max-width: 768px) {
+  .contact {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
   /* Keep heading in one line */
   .heading1 {
     white-space: nowrap;
@@ -1137,5 +1145,3 @@ html {
     align-items: center;
   }
 }
-
-
