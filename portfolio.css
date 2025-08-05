@@ -191,13 +191,6 @@ body {
 
 @media (max-width: 768px) {
   .about {
-    display: block;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .about {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -284,22 +277,22 @@ body {
      color: white;       
 }
 
-.service-list div:hover {
+.services-list div:hover {
     transform: scale(1,05);
     background-color: #012e54;
 }
-.service-list div i {
+.services-list div i {
     font-size: 10px;
     margin-bottom: 30px;
 }
 
-.service-list div h2 {
+.services-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;   
 }
 
-.service-list div a {
+.services-list div a {
     text-decoration: none;
     color: #000000;
     font-size: 12px;
@@ -1043,3 +1036,4 @@ html {
     top: -14px;
   }
 }
+
