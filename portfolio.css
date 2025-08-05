@@ -157,7 +157,7 @@ body {
 
 .about-img img {
     padding-bottom: 10%;
-    max-width: 630px;
+    max-width: 100%;
     height: auto;
     width: 60%;
     border-radius: 10px;
@@ -188,14 +188,12 @@ body {
     margin-bottom: 4rem;
 }
 
-
 @media (max-width: 768px) {
   .about {
     display: block;
     text-align: center;
   }
-}
-
+}192
 @media (max-width: 768px) {
   .about {
     flex-direction: column;
@@ -357,25 +355,25 @@ section {
     font-size: 23px;
 }
 
-.Technical-bars .bar {
+.technical-bars .bar {
     margin-top: 40px 0;
 }
-.Technical-bars .bar:first-child {
+.technical-bars .bar:first-child {
     margin-top: 0;
 }
-.Technical-bars .bar:last-child {
+.technical-bars .bar:last-child {
     margin-bottom: 0;
 }
-.Technical-bars .bar .info {
+.technical-bars .bar .info {
     margin-bottom: 5px;
 }
-.Technical-bars .bar .info span {
+.technical-bars .bar .info span {
     font-size: 17px;
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
-.Technical-bars .bar .progress-line {
+.technical-bars .bar .progress-line {
     position: relative;
     border-radius: 10px;
     width: 100%;
@@ -392,7 +390,7 @@ section {
         transform: scaleX(1);
     }
 }
-.Technical-bars .bar .progress-line span{
+.technical-bars .bar .progress-line span{
     height: 100%;
     background-color: #0ef;
     position: absolute;
@@ -923,225 +921,5 @@ html {
   .contact {
     grid-template-columns: 1fr;
     padding: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .contact {
-    grid-template-columns: 1fr;
-    padding: 20px;
-  }
-}
-@media (max-width: 768px) {
-  /* Keep heading in one line */
-  .heading1 {
-    white-space: nowrap;
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  /* Move technical skills to the LEFT */
-  .technical-bars {
-    padding-left: 0;
-    padding-right: 20px;
-  }
-
-  /* Widen the progress bar line */
-  .bar .progress-line {
-    width: 100%; /* Full width */
-    height: 10px;
-    background: #444;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-  }
-
-  /* Adjust the filled part (actual percentage line) */
-  .bar .progress-line span {
-    display: block;
-    height: 100%;
-    background: #0ef;
-    position: relative;
-    border-radius: 10px;
-  }
-
-  /* Position percentage box correctly */
-  .progress-line span::after {
-    top: -30px;
-    right: -10px;
-  }
-
-  .progress-line span::before {
-    top: -14px;
-  }
-}
-@media (max-width: 768px) {
-  /* Move Technical Skills to left */
-  .technical-bars {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* align left */
-    padding-left: 20px;
-    padding-right: 0;
-  }
-
-  .bar {
-    width: 90%;
-    margin-bottom: 15px;
-  }
-
-  .bar .progress-line {
-    width: 100%;
-  }
-
-  .heading1 {
-    text-align: left;
-    padding-left: 20px;
-  }
-
-  /* Move Professional Skills to left */
-  .radial-bars {
-    justify-content: flex-start; /* align left */
-    padding-left: 20px;
-  }
-}
-@media (max-width: 768px) {
-  /* Keep heading in one line */
-  .heading1 {
-    white-space: nowrap;
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  /* Move technical skills to the LEFT */
-  .technical-bars {
-    padding-left: 0;
-    padding-right: 20px;
-  }
-
-  /* Widen the progress bar line */
-  .bar .progress-line {
-    width: 100%; /* Full width */
-    height: 10px;
-    background: #444;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-  }
-
-  /* Adjust the filled part (actual percentage line) */
-  .bar .progress-line span {
-    display: block;
-    height: 100%;
-    background: #0ef;
-    position: relative;
-    border-radius: 10px;
-  }
-
-  /* Position percentage box correctly */
-  .progress-line span::after {
-    top: -30px;
-    right: -10px;
-  }
-
-  .progress-line span::before {
-    top: -14px;
-  }
-}
-@media (max-width: 768px) {
-  /* Move heading to left */
-  .heading1 {
-    text-align: left;
-    padding-left: 20px;
-    font-size: 24px;
-  }
-
-  /* Align bars to the left */
-  .technical-bars {
-    align-items: flex-start;
-    text-align: left;
-    width: 100%;
-    padding-left: 20px;
-  }
-
-  .bar {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .bar .progress-line {
-    width: 100%;
-    height: 10px;
-    background: #444;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .bar .progress-line span {
-    height: 100%;
-    background: #0ef;
-    border-radius: 10px;
-    display: block;
-    position: relative;
-  }
-
-  /* Show and position the percentage */
-  .progress-line span::after {
-    display: inline;
-    position: absolute;
-    padding: 1px 8px;
-    background-color: #000;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 3px;
-    top: -30px;
-    right: 0;
-    content: attr(data-percent); /* Optional if you use hardcoded content below */
-  }
-
-  .progress-line span::before {
-    display: inline;
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0;
-    border-right-width: 0;
-    border-top-color: #000;
-    top: -14px;
-    right: 10px;
-  }
-}
-@media (max-width: 768px) {
-  .professional-skills {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 10px;
-    justify-items: center;
-  }
-
-  .skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media (max-width: 768px) {
-  .professional-skills {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 10px;
-    justify-items: center;
-  }
-
-  .skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
